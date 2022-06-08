@@ -1,0 +1,123 @@
+.banner {
+  background: url("#{$assetPath}/background.png");
+  background-size: 100% 100%;
+  display: flex;
+  height: 107vh;
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background: url("#{$assetPath}/div-slider.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+  }
+  .left {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("#{$assetPath}/123.png") no-repeat;
+    background-size: cover;
+    z-index: 9999;
+    &__inner {
+      width: 40%;
+      position: absolute;
+      bottom: 15%;
+      left: 5%;
+    }
+    .banner__text {
+      overflow: hidden;
+      h1 {
+        color: #fff;
+        font-weight: weight(regular);
+        font-size: 3.8vw;
+        letter-spacing: -1px;
+        span {
+          color: $primary-color;
+          font-weight: weight(bold);
+        }
+      }
+      p {
+        font-size: 2rem;
+        color: #fff;
+      }
+      .btn:hover {
+        color: #fff;
+      }
+    }
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105vh;
+    width: 100%;
+    // background: url("#{$assetPath}/bannerBackground.png");
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+
+    // &__inner {
+    //   position: absolute;
+    //   left: -5%;
+    //   width: 100%;
+    //   bottom: 0px;
+    // }
+    .swiper-slide {
+      align-self: stretch;
+      background: url("#{$assetPath}/background.png");
+      background-size: 100% 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .slider__btn {
+      position: absolute;
+      display: flex;
+      right: 5%;
+      bottom: 12%;
+      gap: 1rem;
+      .left,
+      .right {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: $primary-color;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+.innerBanner {
+  height: 60vh;
+  img {
+    width: 100%;
+    height: 60vh;
+  }
+  h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+    span {
+      color: $primary-color;
+    }
+  }
+}

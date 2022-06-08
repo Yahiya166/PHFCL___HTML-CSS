@@ -1,0 +1,62 @@
+/* ------------------Typography------------------ */
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: "gil";
+  src: url("GIL_____.eot");
+  src: url("GIL_____.eot?#iefix") format("embedded-opentype"),
+    url("GIL_____.woff") format("woff"), url("GIL_____.TTF") format("truetype");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $font-color;
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  margin: 1rem 0;
+  color: $font-color;
+  font-weight: weight(medium);
+  letter-spacing: -1px;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 3rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+p {
+  line-height: 1.5;
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: $font-color;
+  &:visited {
+    color: $font-color;
+  }
+}
+img {
+  vertical-align: middle;
+}

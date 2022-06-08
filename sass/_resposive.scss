@@ -1,0 +1,318 @@
+@media screen and(max-width:1600px) {
+  .header {
+    .block1x2 {
+      gap: 2rem;
+    }
+    .grid-col90 {
+      grid-template: auto / 2fr 96fr 2fr;
+    }
+    .header__bottom .block1x2 nav {
+      .list {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .section1 .block__inner .loanCalculator {
+    align-items: flex-start;
+    .left {
+      width: 55%;
+    }
+    .right {
+      width: 45%;
+    }
+  }
+}
+@media screen and(max-width:1400px) {
+  .header__bottom .block1x2 nav {
+    .list {
+      &__item a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media screen and(max-width:1200px) {
+  .banner {
+    background-size: cover;
+    .right {
+      display: none;
+    }
+    .left__inner {
+      width: 50%;
+    }
+  }
+  .banner .left .banner__text h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and(max-width:1300px) {
+  html {
+    font-size: 58%;
+  }
+  .grid-col80 {
+    grid-template: auto / 5fr 90fr 5fr;
+  }
+  .footer {
+    padding-top: 0;
+  }
+  .footer__top .block1x2,
+  .footer__middle .block1x2 {
+    flex-direction: column;
+  }
+  .footer__top .left {
+    img {
+      width: 100%;
+    }
+  }
+  .footer__middle {
+    padding-top: 2rem;
+    .left {
+      display: none;
+    }
+  }
+  .footer__top .right .list {
+    justify-content: center;
+  }
+  .imedia {
+    align-items: center;
+  }
+}
+
+@media screen and(max-width:1000px) {
+  .header__top {
+    .block__inner {
+      display: none;
+    }
+  }
+  .header__bottom {
+    .block1x2 .logo {
+      padding-top: 2rem;
+      img {
+        width: 10rem;
+      }
+    }
+    .block1x2 nav {
+      .menuBar {
+        display: block;
+      }
+      .list :not(:last-child) {
+        display: none;
+      }
+    }
+  }
+  .commonSection .block__inner .left {
+    h2,
+    p {
+      width: 100%;
+    }
+  }
+  .process .cards .card {
+    img {
+      width: 80%;
+    }
+  }
+  .process .cards .card + .card::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+  }
+  .grid-col70 {
+    grid-template: auto / 5fr 90fr 5fr;
+  }
+  .faq .block__inner .faq__inner {
+    width: 100%;
+    .question {
+      .left,
+      .right {
+        width: 100%;
+      }
+      flex-direction: column;
+    }
+  }
+  .reports .block__inner {
+    gap: 2rem;
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+  .support {
+    background-size: 100% 118%;
+    .block__inner .mediaBlock {
+      grid-template: auto/repeat(2, 1fr);
+      gap: 2rem;
+      .media {
+        justify-content: flex-start;
+      }
+    }
+  }
+  .footer__bottom .block__inner nav .list {
+    display: none;
+  }
+  .banner {
+    .left__inner {
+      width: 60%;
+    }
+  }
+
+  .footer__bottom .block__inner {
+    flex-direction: column;
+  }
+  .footer__bottom .footer__bottom--inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imedia {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .header__bottom .block1x2 nav {
+    background: transparent;
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+@media screen and(max-width:800px) {
+  .block1x2 {
+    flex-direction: column;
+    gap: 2rem;
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+  .section1 .block__inner .loanCalculator {
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+  .commonSection .block__inner:nth-child(1) {
+    .left {
+      order: 1;
+    }
+  }
+  .commonSection .block__inner:nth-child(1) > img {
+    filter: grayscale(1);
+  }
+  .callout .block__inner {
+    .left {
+      width: 100%;
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+  .process .cards {
+    flex-wrap: wrap;
+  }
+  .news .block__inner .cards {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    grid-template: auto/repeat(1, 1fr);
+    .card {
+      width: 100%;
+    }
+  }
+  .footer__middle {
+    display: none;
+  }
+  .header .block1x2 {
+    flex-direction: row;
+  }
+  .banner {
+    .left__inner {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and(max-width:600px) {
+  html {
+    font-size: 52%;
+  }
+  .commonSection .block__inner .right .round {
+    margin: 0 auto;
+  }
+  .banner {
+    .left__inner {
+      width: 100%;
+    }
+  }
+}
+@media screen and(max-width:500px) {
+  .support .block__inner .mediaBlock {
+    width: 70%;
+    grid-template: auto/repeat(1, 1fr);
+    margin: 4rem auto;
+  }
+  .footer__top .right .list__item {
+    height: 5rem;
+    width: 5rem;
+    i {
+      font-size: 2.4rem;
+    }
+  }
+  .reports .block__inner .right.block1x3 {
+    grid-template: auto / repeat(1, 1fr);
+
+    .card {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 60%;
+      .card__img {
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .commonSection .block__inner .right .round {
+    width: 35rem;
+    height: 35rem;
+  }
+  .section1 .block__inner .loanCalculator .left .inputGroup {
+    flex-direction: column;
+    gap: 1rem;
+    input {
+      width: 100%;
+    }
+    label {
+      white-space: nowrap;
+    }
+  }
+  .section1 .block__inner .loanCalculator .right .inputGroup {
+    flex-direction: column;
+    .label {
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    input {
+      width: 100%;
+      left: 0;
+    }
+  }
+  .header__bottom .block1x2 .logo img {
+    width: 7rem;
+  }
+  .banner {
+    background-position-x: 10%;
+    .left {
+      background-position-x: 10%;
+    }
+  }
+  .section1 {
+    padding: 0;
+  }
+  .faq .block__inner .faq__inner .question .right {
+    display: none;
+  }
+}

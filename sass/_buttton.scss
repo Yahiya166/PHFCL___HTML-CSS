@@ -1,0 +1,56 @@
+.btn {
+  display: inline-block;
+  color: $font-color;
+  font-weight: weight(bold);
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+  text-align: center;
+  @include ease-in();
+  &-primary {
+    border: 3px solid $border-color;
+    background-image: -webkit-linear-gradient(
+      30deg,
+      $primary-color 50%,
+      transparent 50%
+    );
+    background-image: linear-gradient(
+      30deg,
+      $primary-color 50%,
+      transparent 50%
+    );
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    &:hover {
+      background-position: 100%;
+      color: $font-color;
+    }
+  }
+  &-secondary {
+    border: 3px solid $accent-color;
+    background-image: -webkit-linear-gradient(
+      30deg,
+      $accent-color 50%,
+      transparent 50%
+    );
+    background-image: linear-gradient(
+      30deg,
+      $accent-color 50%,
+      transparent 50%
+    );
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    &:hover {
+      background-position: 100%;
+      color: $font-color;
+    }
+  }
+  &.w-100 {
+    background-size: 2000px;
+    @include ease-in(0.5);
+  }
+}
